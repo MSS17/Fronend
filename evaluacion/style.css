@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+.contenedor{
+    width: 100vw;
+    background-color: hsl(216, 12%, 8%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tarjeta1{
+    width: 350px;
+    height: 350px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 25px;
+}
+.icono{
+    width: 40px;
+    height: 40px;
+    background-color: hsla(216, 12%, 54%, 0.397);
+    border-radius: 25px;
+    margin: 20px;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    border: 3px solid black;
+    margin: 5px 20px;
+    color: hsl(0, 0%, 100%);
+}
+.parrafo{
+    border: 3px solid black;
+    margin: 5px 20px;
+    color: #585F6A;
+    letter-spacing: -0.3px;
+
+}
+.botones{
+    margin: 5px 20px;
+    border: 3px solid white;
+    display: flex;
+    justify-content:space-between;
+}
+.botones>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: hsl(212, 14%, 21%);
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 25px;
+    color: rgb(162, 167, 173);
+    border: none;
+}
+.botones>button:hover{
+    background-color: hsl(217, 12%, 63%);
+    cursor: pointer;
+}
+.botones>button:focus{
+    
+    background-color: hsl(25, 97%, 53%);
+}
+.boton6{
+    border: 3px solid white; 
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 50px;
+    height: 44px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.boton6:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+.tarjeta2{
+    width: 350px;
+    height: 350px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 25px;
+    display: none;
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+.texto_imagen h2{
+    margin: 10px 20px;
+    color: rgb(162, 167, 173);
+    text-align: center;
+}
+.texto_imagen p{
+    margin: 10px 20px;
+    color: rgb(162, 167, 173);
+    text-align: center;
+    letter-spacing: 1.1px;
+}
+.texto_imagen>.opcion{
+    width: 200px;
+    border-radius: 50px;
+    background-color: hsl(212, 14%, 21%);
+    color: hsl(25, 97%, 53%);
+}
+@media (min-width: 600px){
+    .tarjeta1, .tarjeta2{
+        width: 450px;
+        height: 450px;
+        padding: 25px;
+    }
+    .titulo, .parrafo, .texto_imagen{
+        margin-bottom: 25px;
+    }
+    .titulo, .texto_imagen>h2{
+        font-size: 1.7rem;
+    }
+    .parrafo, .texto_imagen>p{
+        font-size: 17px;
+    }
+}
